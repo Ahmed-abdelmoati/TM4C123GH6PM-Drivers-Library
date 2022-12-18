@@ -91,7 +91,7 @@ for(u8Index=0;u8Index<INTCTR_FAULTSIZE;u8Index++){
 	u8 u8Priority=(u8)(FAULTS[u8Index].xPriority);
 	u8 Status=(u8)(FAULTS[u8Index].xSet);
 	u8 Index=(u8)(FAULTS[u8Index].xindex);
-switch(Index){
+switch(Index){ 
 	case IntCtr_SysTick:{
 			SYSPRI3|=(u32)(u8Priority)<<29;
 			/* PRIMASK & BASEPRI& FAULTMASK STARTS with 0x0*/
